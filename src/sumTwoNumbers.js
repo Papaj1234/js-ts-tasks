@@ -7,7 +7,7 @@
 module.exports.sumTwoNumbers = function sumTwoNumbers(firstNumber, secondNumber) {
   function convertToNumber(value) {
     if (typeof value === 'string') {
-      return Number(value.replace(/\s/g, ''));
+      return Number(value.replace(/\s+/g, ''));
     }
     return Number(value);
   }

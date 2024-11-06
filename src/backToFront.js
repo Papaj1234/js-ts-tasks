@@ -5,7 +5,10 @@
  * @returns {string}
  */
 module.exports.backToFront = function backToFront(str, symbolsCount) {
-  const frontSymbols = str.slice(0, -numSymbols);
-  const backSymbols = str.slice(-numSymbols);
-  return frontSymbols + str + backSymbols;
+  if (symbolsCount > str.length) {
+    return str;
+  }
+
+  const backSymbol = str.substring(str.length - symbolsCount);
+  return backSymbol + str + backSymbol;
 };

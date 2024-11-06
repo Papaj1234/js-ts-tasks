@@ -8,5 +8,5 @@
 module.exports.divider = function divider(n, k) {
   const wholePart = Math.floor(n / k);
   const remainder = n % k;
-  retur`${wholePart} ${remainder}`;
+  return `${wholePart} ${remainder}`;
 };
