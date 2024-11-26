@@ -16,8 +16,9 @@ module.exports.maxCommonSub = function maxCommonSub(str1, str2) {
   for (let i = 0; i <= str1.length; i++) {
     newArray.push(new Array(str2.length).fill(0));
   }
+
   for (let i = 1; i <= newArray.length; i++) {
-    for (let j = 1; j <= newArray[o].length; j++) {
+    for (let j = 1; j <= newArray[0].length; j++) {
       if (str1[i - 1] === str2[j - 1]) {
         newArray[i][j] = newArray[i - 1][j - 1] + 1;
         if (newArray[i][j] > maxLen) {
@@ -27,5 +28,6 @@ module.exports.maxCommonSub = function maxCommonSub(str1, str2) {
       }
     }
   }
+
   return maxSubstr;
 };
