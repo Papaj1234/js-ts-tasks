@@ -8,6 +8,9 @@
  * @param {{ sortComparator: function() }} TestUtils
  * @returns {function}
  */
-module.exports.sort = function sort(TestUtils) {
-  throw new Error('Not implemented'); // remove this line and create your solution
+odule.exports.sort = function sort(TestUtils) {
+  function func(...Anatoli) {
+    return Anatoli.sort(TestUtils.sortComparator);
+  }
+  return func;
 };
