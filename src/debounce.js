@@ -13,7 +13,7 @@ module.exports.debounce = function debounce(fn, delay) {
         func(...args);
         timer = setTimeout(() => {
           timer = null;
-        }, del);
+        }, del); 
       }
     };
   }

@@ -12,7 +12,7 @@ module.exports.race = function race(promisesArray) {
         })
         .catch(error => {
           reject(error);
-        });
+        }); 
     }
   });
   return promisesFastest;
