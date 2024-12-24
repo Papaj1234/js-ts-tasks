@@ -9,7 +9,7 @@ module.exports.all = function all(promisesArray) {
     for (let i = 0; i < promisesArray.length; i++) {
       promisesArray[i]
         .then(result => {
-          results[i] = result; 
+          results[i] = result;
           results.length === promisesArray.length ? resolve(results) : null;
         })
         .catch(error => {

@@ -12,6 +12,6 @@ module.exports.mockApi = function mockApi(response, delay) {
         func === 'resolve' ? resolve(response) : reject;
       }, delay);
     });
-  } 
+  }
   return mock;
 };
