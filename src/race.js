@@ -9,7 +9,7 @@ module.exports.race = function race(promisesArray) {
       promisesArray[i]
         .then(result => {
           resolve(result);
-        })
+        }) 
         .catch(error => {
           reject(error);
         });

@@ -15,7 +15,7 @@ module.exports.all = function all(promisesArray) {
         .catch(error => {
           reject(error);
         });
-    }
+    } 
   });
   return promisesAll;
 };

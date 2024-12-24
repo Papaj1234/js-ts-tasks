@@ -15,7 +15,7 @@ module.exports.debounce = function debounce(fn, delay) {
           timer = null;
         }, del);
       }
-    };
+    }; 
   }
   return funcDel(fn, delay);
 };
