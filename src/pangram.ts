@@ -6,5 +6,12 @@
  * @returns {boolean}
  */
 module.exports.pangram = function (word: string | number): boolean {
-  throw new Error('Not implemented'); // delete this line and write your code
+  const str = word.toString().toLowerCase();
+  const isNumber = !isNaN(Number(word));
+  const uniqueChars = new Set(str.replace(/[^a-z0-9]/g, ''));
+
+  if (isNumber) {
+    return uniqueChars.size === 10;
+  }
+  return uniqueChars.size === 26;
 };
